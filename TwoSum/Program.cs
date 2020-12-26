@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Helpers;
 
 namespace TwoSum
 {
@@ -11,37 +12,27 @@ namespace TwoSum
             var value = 9;
 
 
-            Console.WriteLine($"Input: {Array2String(s)}; target: {value}");
+            Console.WriteLine($"Input: {Helper.Array2String(s)}; target: {value}");
 
             try
             {
                 var r1 = new ReturnIndexBruteForce();
                 int[] a1 = r1.TwoSum(s, value);
-                Console.WriteLine("Brute Force: ");
-                Console.WriteLine(Array2String(a1));
-                Console.WriteLine();
+                Helper.Print("Brute Force",a1);
+                
                 
                 var r2 = new ReturnIndexTwoPassDictionary();
                 int[] a2 = r2.TwoSum(s, value);
-                Console.WriteLine("Two-Pass Dictionary: ");
-                Console.WriteLine(Array2String(a2));
-                Console.WriteLine();
-
+                Helper.Print("Two-Pass Dictionary", a2);
+                
                 var r3 = new ReturnIndexOnePassDictionary();
                 int[] a3 = r3.TwoSum(s, value);
-                Console.WriteLine("One-Pass Dictionary: ");
-                Console.WriteLine(Array2String(a3));
-                Console.WriteLine();
+                Helper.Print("One-Pass Dictionary", a3);
             }
             catch (Exception e)
             {
                 Console.WriteLine($"Error: {e.Message}");                
             }
-        }
-
-        private static string Array2String<T>(IEnumerable<T> list)
-        {
-            return "[" + string.Join(",", list) + "]";
         }
     }
 

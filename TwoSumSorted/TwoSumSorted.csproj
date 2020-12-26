@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9575279-45CE-4299-9C37-C2D72DE2E317}</ProjectGuid>
+    <ProjectGuid>{7CE522C7-5025-4BEC-88E9-F0ECAACB5149}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TrainingExamples</RootNamespace>
-    <AssemblyName>TrainingExamples</AssemblyName>
+    <RootNamespace>TwoSumSorted</RootNamespace>
+    <AssemblyName>TwoSumSorted</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{01ea0224-5770-4d96-9885-9dc96658ee08}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

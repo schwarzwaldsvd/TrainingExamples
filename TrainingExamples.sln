@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSumSorted", "TwoSumSorte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{01EA0224-5770-4D96-9885-9DC96658EE08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers", "AddTwoNumbers\AddTwoNumbers.csproj", "{21D6F720-B00C-477E-B819-B2ACB4CD334D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{01EA0224-5770-4D96-9885-9DC96658EE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01EA0224-5770-4D96-9885-9DC96658EE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01EA0224-5770-4D96-9885-9DC96658EE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D6F720-B00C-477E-B819-B2ACB4CD334D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D6F720-B00C-477E-B819-B2ACB4CD334D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D6F720-B00C-477E-B819-B2ACB4CD334D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D6F720-B00C-477E-B819-B2ACB4CD334D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

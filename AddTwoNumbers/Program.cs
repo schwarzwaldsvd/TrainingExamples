@@ -30,7 +30,7 @@ namespace AddTwoNumbers
                 var sum = x + y + carry;
 
                 carry = sum / 10;
-                current.Next = new LinkedListNode<int>(sum % 10);
+                current.List.AddLast(new LinkedListNode<int>(sum % 10));
                 current = current.Next;
 
                 p1 = p1?.Next;
@@ -39,7 +39,7 @@ namespace AddTwoNumbers
 
             if (carry>0)
             {
-                current.Next = new LinkedListNode<int>(1);
+                current.List.AddLast(new LinkedListNode<int>(1));
             }
 
             return dummyHead.Next;
